@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-for sourcefile symlink in \
-    "configs/vimrc" "~/.vimrc" \
-    do ln -s "${sourcefile}" "${symlink}" && echo "Setup symlink from ${symlink} to ${sourcefile}"
-done
+ln -s configs/vimrc ~/.vimrc
+
+echo "set -g default-shell /usr/bin/zsh" > ~/.byobu/.tmux.conf
+echo "set -g default-command /usr/bin/zsh" >> ~/.byobu/.tmux.conf
