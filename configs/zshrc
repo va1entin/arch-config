@@ -1,0 +1,7 @@
+alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
+alias docker="sudo docker"
+alias ydl='youtube-dl -x --audio-format "opus" --audio-quality 0 -o "./%(title)s.%(ext)s"'
+alias rgrep="grep -r"
+alias adpdf="asciidoctor -r asciidoctor-pdf -b pdf -a pdf-style='theme.yml'"
+alias mountdata="if ! grep -qs '/mnt/data-drive' /proc/mounts; then sudo cryptsetup luksOpen /dev/disk/by-uuid/6ed8cf7b-1fb2-4dad-9648-14adb275e8f7 data-drive && sudo mount /dev/mapper/data-drive /mnt/data-drive;fi"
+alias dropbox="docker exec -it dropbox dropbox"

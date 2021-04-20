@@ -1,0 +1,78 @@
+networkmanager
+
+# Missing
+# oh-my-zsh
+# autokey
+tor-browser-bundle-bin
+google-cloud-sdk
+kops
+heroku
+visidata
+jekyll
+rubyPackages.rouge
+
+
+# Communication
+# discord
+# mumble
+
+# Crypto
+# bitcoin-qt
+
+# Desktop various
+# filelight
+# zim
+
+# Dev
+# atom
+# android-studio
+# gcc
+# gnumake
+
+# Media
+# mpv
+
+# Networking
+# networkmanager-openvpn
+# networkmanager-vpnc
+
+
+# aiohttp
+# async-timeout
+# flask
+# folium
+
+# h5py
+# Keras
+# ipython
+# matplotlib
+# notebook
+# numpy
+# opencv4
+# pandas
+# pydot
+# pytestcov
+# scikitlearn
+# tensorflow
+# theano
+# toolz
+# python-websockets
+# caldav
+
+# RSAT
+# anydesk
+# teamviewer
+
+
+
+# Shell
+# konsole
+# ncurses
+
+
+# Shell tools
+# appimage-run
+# bind
+# fzf
+# iperf
+# unetbootin

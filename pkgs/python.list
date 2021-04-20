@@ -1,0 +1,6 @@
+python
+python-gnupg
+python-mutagen
+python-pycodestyle
+python-pynacl
+python-pytest
