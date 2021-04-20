@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-ZSHRC_PATH=~/.zshrc
-
 echo "Installing zsh and curl..."
 sudo pacman -S zsh curl
 echo ""
