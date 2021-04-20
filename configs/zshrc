@@ -1,5 +1,6 @@
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
 alias docker="sudo docker"
+alias pacman="sudo pacman"
 alias ydl='youtube-dl -x --audio-format "opus" --audio-quality 0 -o "./%(title)s.%(ext)s"'
 alias rgrep="grep -r"
 alias adpdf="asciidoctor -r asciidoctor-pdf -b pdf -a pdf-style='theme.yml'"
