@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Upgrading packages..."
-pacman -Syu
+sudo pacman -Syu
 echo ""
 
 echo "Iterating package lists..."
@@ -10,7 +10,7 @@ find pkgs/ -type f -name "*.list" -exec bash -c '
     case "$yn" in
         [Yy]*)
             echo -e "\n\t Installing packages from {}"
-            pacman -S - < {}
+            sudo pacman -S - < {}
             echo ""
             ;; \
         *)
