@@ -18,3 +18,11 @@ find pkgs/ -type f -name "*.list" -exec bash -c '
             echo ""
             ;;
     esac' \;
+
+echo "Enabling docker..."
+sudo systemctl enable docker.service
+echo ""
+
+echo "Starting docker..."
+sudo systemctl start docker.service
+echo ""
