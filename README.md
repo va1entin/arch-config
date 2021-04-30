@@ -7,3 +7,5 @@
 ./install-pkgs.sh
 
 ./setup-configs.sh
+
+./setup-syncthing.sh
