@@ -1,6 +1,7 @@
 python
 python-gnupg
 python-mutagen
+python-pip
 python-pycodestyle
 python-pynacl
 python-pytest
