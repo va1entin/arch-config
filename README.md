@@ -6,6 +6,10 @@
 
 ./install-pkgs.sh
 
+./setup-docker.sh
+
 ./setup-configs.sh
 
 ./setup-syncthing.sh
+
+./setup-soft-brightness.sh
