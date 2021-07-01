@@ -2,6 +2,7 @@
 
 echo "Creating symlink for vimrc..."
 ln -s ~/git/arch-config/configs/vimrc ~/.vimrc
+sudo ln -s ~/git/arch-config/configs/vimrc /root/.vimrc
 echo ""
 
 echo "Setting zsh as default shell for byobu..."
