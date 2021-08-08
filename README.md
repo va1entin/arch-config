@@ -13,3 +13,5 @@
 ./setup-syncthing.sh
 
 ./setup-soft-brightness.sh
+
+./setup-teamviewer.sh
