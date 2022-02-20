@@ -3,5 +3,6 @@ python-gnupg
 python-mutagen
 python-pip
 python-pycodestyle
+python-pylint
 python-pynacl
 python-pytest
