@@ -6,6 +6,8 @@
 
 ./install-pkgs.sh
 
+./setup-timers.sh
+
 ./setup-docker.sh
 
 ./setup-configs.sh
