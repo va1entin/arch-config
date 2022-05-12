@@ -17,3 +17,9 @@
 ./setup-soft-brightness.sh
 
 ./setup-teamviewer.sh
+
+## Gnome extensions
+
+[WindowIsReady Remover](https://github.com/nunofarruca/WindowIsReady_Remover)
+
+[Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
