@@ -7,10 +7,12 @@ jpegoptim
 jq
 libwebp
 lm_sensors
+lshw
 lsof
 man
 mtr
 ncdu
+nethogs
 nmap
 ntfs-3g
 openssl
@@ -20,6 +22,7 @@ pandoc
 pwgen
 rclone
 rsync
+sshfs
 traceroute
 tree
 unrar
