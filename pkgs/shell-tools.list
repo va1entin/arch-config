@@ -23,6 +23,7 @@ pwgen
 rclone
 rsync
 sshfs
+steghide
 traceroute
 tree
 unrar
