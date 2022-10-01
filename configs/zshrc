@@ -1,3 +1,5 @@
+setopt HIST_IGNORE_SPACE
+
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
 alias code="codium"
 alias docker="sudo docker"
