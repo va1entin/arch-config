@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo "Upgrading packages..."
+echo "Upgrading packages and installing yay..."
 sudo pacman -Syu yay
 echo ""
 
