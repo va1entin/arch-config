@@ -1,6 +1,7 @@
 asciidoctor
 cpulimit
 curl
+ddccontrol
 file
 htop
 jpegoptim
