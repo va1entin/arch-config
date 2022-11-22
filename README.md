@@ -86,6 +86,8 @@ Automatically save session on logout -> No (Delete any saved sessions)
 
 Lock screen before sleep -> Yes
 
+**Make sure to uncheck "Save session for future logins" on logout!**
+
 **Application Autostart tab**
 
 Remove Notes
