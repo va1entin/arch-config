@@ -42,16 +42,18 @@ Increase size, then decrease to 16 again
 
 ## Night mode
 
-Settings Editor -> night-mode and apply settings:
+Settings Editor -> night-mode
 
 **Dark**
 
 GtkTheme: Arc-Dark
+
 IconTheme: Arc-X-P
 
 **Light**
 
 GtkTheme: Arc
+
 IconTheme: Arc-X-D
 
 ### Automatic switch
@@ -61,9 +63,13 @@ Make sure redshift is working by running `redshift -p` and then follow [instruct
 ## Notifications
 
 Default position: Bottom left
+
 Opacity: 100%
+
 Disappear after: 10 seconds
+
 Fade out: Yes
+
 Slide out: Yes
 
 ## Screensaver
