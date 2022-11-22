@@ -58,7 +58,7 @@ IconTheme: Arc-X-D
 
 ### Automatic switch
 
-Make sure redshift is working by running `redshift -p` and then follow [instructions for Night mode](https://github.com/bimlas/xfce4-night-mode#readme).
+Make sure redshift is working by running `redshift -p` and then follow [instructions for Night mode](https://github.com/bimlas/xfce4-night-mode#readme)
 
 ## Notifications
 
