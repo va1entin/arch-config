@@ -34,6 +34,12 @@ Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 
 Change command of shortcut on `Super L`: `xfce4-appfinder` (no collapsed mode)
 
+## Lock screen
+
+Keyboard -> Application Shortcuts
+
+Add shortcut for `Ctrl+l` with command: `xflock4`
+
 ## Mouse and Touchpad (large cursor fix)
 
 **Theme tab**
