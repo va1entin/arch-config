@@ -82,7 +82,7 @@ Slide out: Yes
 
 **Lock screen tab**
 
-Enable after 5 minutes
+Enable after 0 minutes
 
 ## Session & Startup
 
