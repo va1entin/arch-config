@@ -38,7 +38,7 @@ Change command of shortcut on `Super L`: `xfce4-appfinder` (no collapsed mode)
 
 Keyboard -> Application Shortcuts
 
-Add shortcut for `Ctrl+l` with command: `xflock4`
+Add shortcut for `Ctrl+Shift+L` and `Ctrl+Alt+L` with command: `xflock4`
 
 ## Mouse and Touchpad (large cursor fix)
 
