@@ -37,10 +37,16 @@ Change command of shortcut on `Super L`: `xfce4-appfinder` (no collapsed mode)
 ## HiDPI
 
 <https://wiki.archlinux.org/title/HiDPI#Xfce>
+<https://wiki.archlinux.org/title/HiDPI#Qt_5>
+
+Display -> General
+
+Set scale to "custom: 1.2"
 
 ```bash
 xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s 2
 xfconf-query -c xfwm4 -p /general/theme -s Default-xhdpi
+sudo echo "QT_FONT_DPI=192" >> /etc/environment
 ```
 
 ## Lock screen
