@@ -49,6 +49,12 @@ xfconf-query -c xfwm4 -p /general/theme -s Default-xhdpi
 sudo echo "QT_FONT_DPI=192" >> /etc/environment
 ```
 
+Display -> Advanced -> Connecting Displays
+
+"When new displays are connected": "Do nothing"
+
+-> Otherwise the display dialogue will open every time the screen turns off while XFCE is running (on every lockscreen basically) and reset scale to 1
+
 ## Lock screen
 
 Keyboard -> Application Shortcuts
