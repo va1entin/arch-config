@@ -22,6 +22,23 @@ cd arch-config
 ./setup-teamviewer.sh
 ```
 
+# LightDM
+
+```bash
+yay -S lightdm lightdm-slick-greeter lightdm-settings
+```
+
+`/etc/lightdm/slick-greeter.conf `
+
+```
+[Greeter]
+enable-hidpi=on
+```
+
+`systemctl enable lightdm.service`
+
+See [Arch wiki](https://wiki.archlinux.org/title/LightDM)
+
 # XFCE
 
 Open Settings Manager and apply the following settings in respective categories
