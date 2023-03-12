@@ -51,6 +51,8 @@ Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 
 Change command of shortcut on `Super L`: `xfce4-appfinder` (no collapsed mode)
 
+Add shortcut for `Ctrl+Alt+Down` with command `wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz`
+
 ## HiDPI
 
 <https://wiki.archlinux.org/title/HiDPI#Xfce>
@@ -149,6 +151,14 @@ With a dragged window -> No
 **Cycling tab**
 
 Cycle through windows on all workspaces -> No
+
+**Keyboard tab**
+
+```
+Maximize window -> Ctrl+Alt+Up
+Tile window to the left -> Alt+Left
+Tile window to the right -> Alt+Right
+```
 
 ## Workspaces
 
