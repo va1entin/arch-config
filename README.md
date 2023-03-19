@@ -86,6 +86,10 @@ Add shortcut for `Ctrl+Shift+L` and `Ctrl+Alt+L` with command: `xflock4`
 
 Increase size, then decrease to 16 again
 
+## Mousepad
+
+View -> Colour Scheme -> Select `Oblivion`
+
 ## Night mode
 
 Settings Editor -> night-mode
@@ -137,6 +141,20 @@ Lock screen before sleep -> Yes
 **Application Autostart tab**
 
 Remove Notes
+
+## Terminal
+
+View -> Preferences
+
+Appearance tab
+
+- Set font to `Monospace Regular` at size `12`
+
+Colours tab
+
+- Select Preset "Tango"
+- Set background colour `#171421`
+- Set Text colour `#d0cfcc`
 
 ## Window manager
 
