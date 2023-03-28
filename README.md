@@ -122,6 +122,12 @@ Fade out: Yes
 
 Slide out: Yes
 
+## Ristretto
+
+Edit -> Preferences -> Behaviour
+
+Uncheck `Maximize window on startup when opening an image`
+
 ## Screensaver
 
 **Lock screen tab**
