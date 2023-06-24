@@ -34,5 +34,5 @@ vim
 wget
 which
 yamllint
-youtube-dl
+yt-dlp
 zip
