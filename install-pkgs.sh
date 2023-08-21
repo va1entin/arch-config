@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-echo "Upgrading packages and installing yay..."
-sudo pacman -Syu yay
+echo "Upgrading packages, installing yay and eos-rankmirrors..."
+sudo pacman -Syu yay eos-rankmirrors
+echo ""
+
+echo "Ranking EOS packages mirrors..."
+sudo eos-rankmirrors
 echo ""
 
 echo "Setting yay config..."
