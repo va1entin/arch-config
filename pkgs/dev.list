@@ -3,4 +3,5 @@ docker-compose
 git
 github-cli
 hugo
+rpi-imager
 visual-studio-code-bin
