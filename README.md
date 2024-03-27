@@ -162,6 +162,14 @@ Colours tab
 - Set background colour `#171421`
 - Set Text colour `#d0cfcc`
 
+## Volume control shortcut
+
+Keyboard -> Application Shortcuts
+
+Add shortcut for `Super+F9 with command: `amixer set Master 5%-`
+
+Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
+
 ## Window manager
 
 **Advanced tab**
