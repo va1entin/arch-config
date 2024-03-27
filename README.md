@@ -134,6 +134,16 @@ Uncheck `Maximize window on startup when opening an image`
 
 Enable after 0 minutes
 
+## Screen brightness shortcut
+
+Keyboard -> Application Shortcuts
+
+Get monitor device path: `ddccontrol -p | grep -Eo 'dev:/dev/[a-z0-9-]*$' | sort -u`
+
+Add shortcut for `Super+F11` with command: `ddccontrol -r 0x10 -W -5 -d dev:/dev/i2c-3`
+
+Add shortcut for `Super+F12` with command: `ddccontrol -r 0x10 -W +5 -d dev:/dev/i2c-3`
+
 ## Session & Startup
 
 **General tab**
