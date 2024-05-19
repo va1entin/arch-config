@@ -1,6 +1,7 @@
 python
 python-gnupg
 python-mutagen
+python-openai
 python-pip
 python-pycodestyle
 python-pylint
