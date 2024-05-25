@@ -19,7 +19,7 @@ cd arch-config
 
 ./setup-syncthing.sh
 
-./setup-teamviewer.sh
+# ./setup-teamviewer.sh
 ```
 
 # LightDM
