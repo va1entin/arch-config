@@ -49,7 +49,7 @@ Keyboard -> Application Shortcuts
 
 Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 
-Change command of shortcut on `Super L`: `xfce4-appfinder` (no collapsed mode)
+Add shortcut for `Super L` with command: `xfce4-appfinder` (no collapsed mode)
 
 Add shortcut for `Ctrl+Alt+Down` with command `wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz`
 
@@ -112,15 +112,19 @@ Make sure redshift is working by running `redshift -p` and then follow [instruct
 
 ## Notifications
 
+**General tab**
+
+Fade out: Yes
+
+Slide out: Yes
+
+**Appearance tab**
+
 Default position: Bottom left
 
 Opacity: 100%
 
 Disappear after: 10 seconds
-
-Fade out: Yes
-
-Slide out: Yes
 
 ## Ristretto
 
