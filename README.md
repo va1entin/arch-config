@@ -124,6 +124,10 @@ Opacity: 100%
 
 Disappear after: 10 seconds
 
+## Panel (Remove bottom panel)
+
+Panel -> Remove panel 2
+
 ## Ristretto
 
 Edit -> Preferences -> Behaviour
