@@ -78,7 +78,15 @@ Keyboard -> Application Shortcuts
 
 Add shortcut for `Ctrl+Shift+L` and `Ctrl+Alt+L` with command: `xflock4`
 
-## Mouse and Touchpad (large cursor fix)
+## Mouse and Touchpad
+
+### Mouse cursor theme
+
+**Theme tab**
+
+Set theme Adwaita
+
+### Large cursor fix
 
 **Theme tab**
 
