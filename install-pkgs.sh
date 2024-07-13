@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-echo "Upgrading packages, installing yay and eos-rankmirrors..."
-sudo pacman -Syu yay eos-rankmirrors
-echo ""
-
 echo "Ranking EOS packages mirrors..."
 sudo eos-rankmirrors
 echo ""
