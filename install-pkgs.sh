@@ -14,7 +14,7 @@ find pkgs/ -type f -name "*.list" -exec bash -c '
     case "$yn" in
         [Yy]*)
             echo -e "\n\t Installing packages from {}"
-            sudo yay -S - < {}
+            yay -S - < {}
             echo ""
             ;; \
         *)
