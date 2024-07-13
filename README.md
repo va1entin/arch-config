@@ -90,7 +90,7 @@ View -> Colour Scheme -> Select `Oblivion`
 
 ## Night mode
 
-Settings Editor -> night-mode
+Settings Editor -> night-mode (channel only appeared at some point after genmon and redshift were set up, not sure why)
 
 **Dark**
 
