@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing zsh and curl..."
-sudo pacman -S zsh curl
+sudo yay -S zsh curl
 echo ""
 
 echo "Installing oh-my-zsh..."
