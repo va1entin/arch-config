@@ -51,8 +51,6 @@ Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 
 Add shortcut for `Super L` with command: `xfce4-appfinder` (no collapsed mode)
 
-Add shortcut for `Ctrl+Alt+Down` with command `wmctrl -r :ACTIVE: -b remove,maximized_vert,maximized_horz`
-
 ## HiDPI
 
 <https://wiki.archlinux.org/title/HiDPI#Xfce>
@@ -190,6 +188,7 @@ Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
 
 ```
 Maximize window -> Ctrl+Alt+Up
+Hide window -> Alt+Down
 Tile window to the left -> Alt+Left
 Tile window to the right -> Alt+Right
 ```
