@@ -164,13 +164,13 @@ Remove Notes
 
 ## Terminal
 
-View -> Preferences
+Edit -> Preferences
 
-Appearance tab
+**Appearance tab**
 
 - Set font to `Monospace Regular` at size `12`
 
-Colours tab
+**Colours tab**
 
 - Select Preset "Tango"
 - Set background colour `#171421`
