@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Installing syncthing..."
-sudo pacman -S syncthing
+yay -S syncthing
 echo ""
 
 echo "Enabling syncthing user service..."
