@@ -186,6 +186,14 @@ Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
 
 ## Window manager
 
+**Keyboard tab**
+
+```
+Maximize window -> Ctrl+Alt+Up
+Tile window to the left -> Alt+Left
+Tile window to the right -> Alt+Right
+```
+
 **Advanced tab**
 
 Wrap workspaces when reaching the screen edge
@@ -197,14 +205,6 @@ With a dragged window -> No
 **Cycling tab**
 
 Cycle through windows on all workspaces -> No
-
-**Keyboard tab**
-
-```
-Maximize window -> Ctrl+Alt+Up
-Tile window to the left -> Alt+Left
-Tile window to the right -> Alt+Right
-```
 
 ## Workspaces
 
