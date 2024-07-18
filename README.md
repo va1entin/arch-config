@@ -199,8 +199,8 @@ Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
 **Keyboard tab**
 
 ```
-Maximize window -> Ctrl+Alt+Up
-Hide window -> Alt+Down
+Maximize window -> Ctrl+Alt+Up (because of Alt+Up shortcut in VSC)
+Hide window -> Ctrl+Alt+Down (because of Alt+Down shortcut in VSC)
 Tile window to the left -> Alt+Left
 Tile window to the right -> Alt+Right
 ```
