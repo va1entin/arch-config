@@ -51,6 +51,12 @@ Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 
 Add shortcut for `Super L` with command: `xfce4-appfinder` (no collapsed mode)
 
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>x" -s "xfce4-appfinder --quit"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" -s "xfce4-appfinder --quit"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -s "xfce4-appfinder"
+```
+
 ## HiDPI
 
 <https://wiki.archlinux.org/title/HiDPI#Xfce>
@@ -63,6 +69,7 @@ Set scale to "custom: 1.2"
 ```bash
 xfconf-query -c xsettings -p /Gdk/WindowScalingFactor -s 2
 xfconf-query -c xfwm4 -p /general/theme -s Default-xhdpi
+xfconf-query -c xsettings -p /Gtk/CursorThemeSize -s 42
 sudo echo "QT_FONT_DPI=192" >> /etc/environment
 ```
 
@@ -78,13 +85,19 @@ Keyboard -> Application Shortcuts
 
 Add shortcut for `Ctrl+Shift+L` and `Ctrl+Alt+L` with command: `xflock4`
 
-## Mouse and Touchpad
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Shift>l" -s "xflock4"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -s "xflock4"
+```
 
-### Mouse cursor theme
+## Mouse cursor theme
 
-**Theme tab**
+Mouse and Touchpad -> Theme
 
 Set theme Adwaita
+```bash
+xfconf-query -c xsettings -p /Gtk/CursorThemeName -s Adwaita
+```
 
 ### Large cursor fix
 
@@ -112,6 +125,13 @@ GtkTheme: Arc
 
 IconTheme: Arc-X-D
 
+```bash
+xfconf-query -c night-mode -p /Dark/GtkTheme -s "Arc-Dark"
+xfconf-query -c night-mode -p /Dark/IconTheme -s "Arc-X-P"
+xfconf-query -c night-mode -p /Light/GtkTheme -s "Arc"
+xfconf-query -c night-mode -p /Dark/IconTheme -s "Arc-X-D"
+```
+
 ### Automatic switch
 
 Run `setup-redshift.sh`
@@ -134,6 +154,12 @@ Opacity: 100%
 
 Disappear after: 10 seconds
 
+```bash
+xfconf-query -c xfce4-notifyd -p /do-slideout -s "true"
+xfconf-query -c xfce4-notifyd -p /notify-location -s "bottom-left"
+xfconf-query -c xfce4-notifyd -p /initial-opacity -s "1,000000"
+```
+
 ## Panel (Remove bottom panel)
 
 Panel -> Remove panel 2
@@ -144,11 +170,19 @@ Edit -> Preferences -> Behaviour
 
 Uncheck `Maximize window on startup when opening an image`
 
+```bash
+xfconf-query -c ristretto -p /window/maximize-on-startup -s "false"
+```
+
 ## Screensaver
 
 **Lock screen tab**
 
 Enable after 0 minutes
+
+```bash
+xfconf-query -c xfce4-screensaver -p /saver/mode -s 0
+```
 
 ## Screen brightness shortcut
 
@@ -173,6 +207,11 @@ Lock screen before sleep -> Yes
 **Application Autostart tab**
 
 Remove Notes
+
+```bash
+xfconf-query -c xfce4-session -p /general/SaveOnExit -s "false"
+xfconf-query -c xfce4-session -p /shutdown/LockScreen -s "true"
+```
 
 ## Terminal
 
@@ -207,11 +246,22 @@ Tile window to the left -> Alt+Left
 Tile window to the right -> Alt+Right
 ```
 
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Up" -s "maximize_window_key"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Down" -s "hide_window_key"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Left" -s "tile_left_key"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Right" -s "tile_right_key"
+```
+
 **Advanced tab**
 
 Wrap workspaces when reaching the screen edge
 
 With a dragged window -> No
+
+```bash
+xfconf-query -c xfwm4 -p /general/wrap_windows -s "false"
+```
 
 ## Window manager tweaks
 
@@ -219,11 +269,19 @@ With a dragged window -> No
 
 Cycle through windows on all workspaces -> No
 
+```bash
+xfconf-query -c xfwm4 -p /general/cycle_workspaces -s "false"
+```
+
 ## Workspaces
 
 **General tab**
 
 Number of workspaces: 2
+
+```bash
+xfconf-query -c xfwm4 -p /general/workspace_count -s 2
+```
 
 # Gnome (archive)
 
