@@ -1,5 +1,5 @@
-docker
-docker-compose
+podman
+podman-compose
 git
 github-cli
 hugo
