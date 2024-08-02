@@ -50,9 +50,9 @@ Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
 Add shortcut for `Super L` with command: `xfce4-appfinder` (no collapsed mode)
 
 ```bash
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>x" -s "xfce4-appfinder --quit"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" -s "xfce4-appfinder --quit"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -s "xfce4-appfinder"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>x" -t "string" -s "xfce4-appfinder --quit" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" -t "string" -s "xfce4-appfinder --quit" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -t "string" -s "xfce4-appfinder" -n
 ```
 
 ## HiDPI
@@ -84,8 +84,8 @@ Keyboard -> Application Shortcuts
 Add shortcut for `Ctrl+Shift+L` and `Ctrl+Alt+L` with command: `xflock4`
 
 ```bash
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Shift>l" -s "xflock4"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -s "xflock4"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Shift>l" -t "string" -s "xflock4" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -t "string" -s "xflock4" -n
 ```
 
 ## Mouse cursor theme
@@ -124,10 +124,10 @@ GtkTheme: Arc
 IconTheme: Arc-X-D
 
 ```bash
-xfconf-query -c night-mode -p /Dark/GtkTheme -s "Arc-Dark"
-xfconf-query -c night-mode -p /Dark/IconTheme -s "Arc-X-P"
-xfconf-query -c night-mode -p /Light/GtkTheme -s "Arc"
-xfconf-query -c night-mode -p /Dark/IconTheme -s "Arc-X-D"
+xfconf-query -c night-mode -p /Dark/GtkTheme -t "string" -s "Arc-Dark" -n
+xfconf-query -c night-mode -p /Dark/IconTheme -t "string" -s "Arc-X-P" -n
+xfconf-query -c night-mode -p /Light/GtkTheme -t "string" -s "Arc" -n
+xfconf-query -c night-mode -p /Light/IconTheme -t "string" -s "Arc-X-D" -n
 ```
 
 ### Automatic switch
@@ -153,9 +153,9 @@ Opacity: 100%
 Disappear after: 10 seconds
 
 ```bash
-xfconf-query -c xfce4-notifyd -p /do-slideout -s "true"
-xfconf-query -c xfce4-notifyd -p /notify-location -s "bottom-left"
-xfconf-query -c xfce4-notifyd -p /initial-opacity -s "1,000000"
+xfconf-query -c xfce4-notifyd -p /do-slideout -t "bool" -s "true" -n
+xfconf-query -c xfce4-notifyd -p /notify-location -t "string" -s "bottom-left" -n
+xfconf-query -c xfce4-notifyd -p /initial-opacity -t "string" -s "1,000000" -n
 ```
 
 ## Panel (Remove bottom panel)
@@ -169,7 +169,7 @@ Edit -> Preferences -> Behaviour
 Uncheck `Maximize window on startup when opening an image`
 
 ```bash
-xfconf-query -c ristretto -p /window/maximize-on-startup -s "false"
+xfconf-query -c ristretto -p /window/maximize-on-startup -t "bool" -s "false" -n
 ```
 
 ## Screensaver
@@ -179,7 +179,7 @@ xfconf-query -c ristretto -p /window/maximize-on-startup -s "false"
 Enable after 0 minutes
 
 ```bash
-xfconf-query -c xfce4-screensaver -p /saver/mode -s 0
+xfconf-query -c xfce4-screensaver -p /saver/mode -t "int" -s 0 -n
 ```
 
 ## Screen brightness shortcut
@@ -208,7 +208,7 @@ Remove Notes
 
 ```bash
 xfconf-query -c xfce4-session -p /general/SaveOnExit -s "false"
-xfconf-query -c xfce4-session -p /shutdown/LockScreen -s "true"
+xfconf-query -c xfce4-session -p /shutdown/LockScreen -t "bool" -s "true" -n
 ```
 
 ## Terminal
@@ -247,8 +247,8 @@ Tile window to the right -> Alt+Right
 ```bash
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Up" -s "maximize_window_key"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Down" -s "hide_window_key"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Left" -s "tile_left_key"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Right" -s "tile_right_key"
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Left" -t "string" -s "tile_left_key" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Right" -t "string" -s "tile_right_key" -n
 ```
 
 **Advanced tab**
