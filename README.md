@@ -165,10 +165,10 @@ Panel -> Remove panel 2
 ## Power Manager
 
 ```bash
-xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -s 1
-xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-battery -s 1
-xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -s 1
-xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-ac -s 1
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-battery -t "int" -s 1 -n
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-battery -t "int" -s 1 -n
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/lid-action-on-ac -t "int" -s 1 -n
+xfconf-query -c xfce4-power-manager -p /xfce4-power-manager/inactivity-sleep-mode-on-ac -t "int" -s 1 -n
 ```
 
 ## Ristretto
