@@ -207,7 +207,7 @@ Lock screen before sleep -> Yes
 Remove Notes
 
 ```bash
-xfconf-query -c xfce4-session -p /general/SaveOnExit -s "false"
+xfconf-query -c xfce4-session -p /general/SaveOnExit -t bool -s "false" -n
 xfconf-query -c xfce4-session -p /shutdown/LockScreen -t "bool" -s "true" -n
 ```
 
