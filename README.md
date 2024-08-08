@@ -77,6 +77,20 @@ Display -> Advanced -> Connecting Displays
 
 -> Otherwise the display dialogue will open every time the screen turns off while XFCE is running (on every lockscreen basically) and reset scale to 1
 
+## Keyboard remapping
+
+To enable <, > and | symbols on Ctrl+i, o and p for QWERTY keyboards with German layout on X11:
+
+```bash
+yay -S xdotool
+
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>i" -t "string" -s "sh -c 'sleep 0.2 ; xdotool type \"<\"'" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>o" -t "string" -s "sh -c 'sleep 0.2 ; xdotool type \">\"'" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>p" -t "string" -s "sh -c 'sleep 0.2 ; xdotool type \"|\"'" -n
+```
+
+For Wayland see [wtype](https://github.com/atx/wtype) or the [Arch wiki](https://wiki.archlinux.org/title/Input_remap_utilities).
+
 ## Lock screen
 
 Keyboard -> Application Shortcuts
