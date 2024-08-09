@@ -1,9 +1,6 @@
 setopt HIST_IGNORE_SPACE
 
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
-alias docker="sudo docker"
-alias docker-compose="sudo docker-compose"
-alias pacman="sudo pacman"
 alias ydl="~/git/tools/ydl/ydl.py"
 alias rgrep="grep -r"
 alias adpdf="asciidoctor -r asciidoctor-pdf -b pdf -a pdf-style='theme.yml'"
