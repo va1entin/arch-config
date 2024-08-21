@@ -268,10 +268,10 @@ Tile window to the right -> Alt+Right
 ```
 
 ```bash
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Up" -s "maximize_window_key"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Primary><Alt>Down" -s "hide_window_key"
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Left" -t "string" -s "tile_left_key" -n
-xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Alt>Right" -t "string" -s "tile_right_key" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Shift><Alt>Up" -t string -s "maximize_window_key" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Shift><Alt>Down" -t string -s "hide_window_key" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Shift><Alt>Left" -t "string" -s "tile_left_key" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Shift><Alt>Right" -t "string" -s "tile_right_key" -n
 ```
 
 **Advanced tab**
