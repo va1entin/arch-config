@@ -23,17 +23,20 @@ cd arch-config
 # LightDM
 
 ```bash
-yay -S lightdm lightdm-slick-greeter lightdm-settings
+sudo cp ~/Sync/Wallpaper/1596997155092.jpg /usr/share/endeavouros/backgrounds/
+sudo chown root:root /usr/share/endeavouros/backgrounds/1596997155092.jpg
+sudo cp configs/slick-greeter.conf /etc/lightdm/
+sudo chown root:root /etc/lightmd/slick-greeter.conf
 ```
 
-`/etc/lightdm/slick-greeter.conf `
+## HiDPI
+
+Add to `/etc/lightmd/slick-greeter.conf`
 
 ```
 [Greeter]
 enable-hidpi=on
 ```
-
-`systemctl enable lightdm.service`
 
 See [Arch wiki](https://wiki.archlinux.org/title/LightDM)
 
