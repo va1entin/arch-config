@@ -306,15 +306,3 @@ Number of workspaces: 2
 ```bash
 xfconf-query -c xfwm4 -p /general/workspace_count -s 2
 ```
-
-# Gnome (archive)
-
-I'm not using Gnome anymore so this chapter represents my last config as of Nov. 2022
-
-## Extensions
-
-```bash
-gnome/setup-soft-brightness.sh
-```
-
-[Night Theme Switcher](https://extensions.gnome.org/extension/2236/night-theme-switcher/)
