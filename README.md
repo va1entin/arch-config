@@ -13,6 +13,8 @@ cd arch-config
 
 ./setup-timers.sh
 
+./setup-bootctl.sh
+
 ./setup-configs.sh
 
 ./setup-syncthing.sh
