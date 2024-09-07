@@ -1,5 +1,22 @@
 #!/usr/bin/env bash
 
+restart_xfce_session=false
+
+# get -r cli parameter from user
+while getopts ":r" opt; do
+    case ${opt} in
+        r )
+            restart_xfce_session=true
+            ;;
+        \? )
+            echo "Usage: toggle_scaling.sh [-r]"
+            echo "Options:"
+            echo "  -r  Restart the XFCE session after toggling scaling"
+            exit 1
+            ;;
+    esac
+done
+
 # Window scaling factor
 window_scaling_factor=$(xfconf-query -c xsettings -p /Gdk/WindowScalingFactor)
 if [ $window_scaling_factor -eq 1 ]; then
@@ -30,9 +47,7 @@ else
     echo "Set cursor size to normal-dpi default 16"
 fi
 
-# Ask user if they want to restart the session
-read -p "Do you want to restart the session to apply the changes? [y/N] " restart
-if [ "$restart" == "y" ]; then
+if [ "$restart_xfce_session" == true ]; then
     xfce4-panel -r
     echo "XFCE session restarted"
 fi
