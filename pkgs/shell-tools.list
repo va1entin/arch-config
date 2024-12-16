@@ -34,5 +34,6 @@ vim
 wget
 which
 yamllint
+yaycache
 yt-dlp
 zip
