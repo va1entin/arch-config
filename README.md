@@ -50,14 +50,12 @@ Open Settings Manager and apply the following settings in respective categories
 
 Keyboard -> Application Shortcuts
 
-Add shortcut for `Ctrl+x` and `Super+x` with command: `xfce4-appfinder --quit`
-
 Add shortcut for `Super L` with command: `xfce4-appfinder` (no collapsed mode)
 
 ```bash
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary>x" -t "string" -s "xfce4-appfinder --quit" -n
-xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>x" -t "string" -s "xfce4-appfinder --quit" -n
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/Super_L" -t "string" -s "xfce4-appfinder" -n
+xfconf-query -c xfce4-appfinder -p /close-on-focus-lost -t "bool" -s "true" -n
+xfconf-query -c xfce4-appfinder -p /hide-window-decorations -t "bool" -s "true" -n
 ```
 
 ## HiDPI
