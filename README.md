@@ -42,7 +42,7 @@ enable-hidpi=on
 
 See [Arch wiki](https://wiki.archlinux.org/title/LightDM)
 
-# XFCE
+# XFCE 4.20
 
 Open Settings Manager and apply the following settings in respective categories
 
