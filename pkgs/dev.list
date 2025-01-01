@@ -2,6 +2,7 @@ podman
 podman-compose
 git
 github-cli
+go
 hugo
 rpi-imager
 visual-studio-code-bin
