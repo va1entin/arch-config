@@ -294,7 +294,8 @@ xfconf-query -c xfwm4 -p /general/wrap_windows -s "false"
 Cycle through windows on all workspaces -> No
 
 ```bash
-xfconf-query -c xfwm4 -p /general/cycle_workspaces -s "false"
+xfconf-query -c xfwm4 -p "/general/cycle_workspaces" -t "bool" -s "false" -n
+xfconf-query -c xfwm4 -p "/general/scroll_workspaces" -t "bool" -s "false" -n
 ```
 
 ## Workspaces
