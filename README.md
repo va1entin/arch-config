@@ -179,6 +179,12 @@ xfconf-query -c xfce4-notifyd -p /initial-opacity -t "string" -s "1,000000" -n
 
 Panel -> Remove panel 2
 
+Panel Items -> Window Buttons -> Properties -> Sorting order: Window title
+
+```bash
+xfconf-query -c xfce4-panel -p /plugins/plugin-2/sort-order -t "int" -s 2 -n
+```
+
 ## Power Manager
 
 ```bash
