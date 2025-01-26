@@ -175,14 +175,15 @@ xfconf-query -c xfce4-notifyd -p /notify-location -t "string" -s "bottom-left" -
 xfconf-query -c xfce4-notifyd -p /initial-opacity -t "string" -s "1,000000" -n
 ```
 
-## Panel (Remove bottom panel)
+## Panel
 
-Panel -> Remove panel 2
+Panel -> Remove panel 2 (bottom panel)
 
 Panel Items -> Window Buttons -> Properties -> Sorting order: Window title
 
 ```bash
 xfconf-query -c xfce4-panel -p /plugins/plugin-2/sort-order -t "int" -s 2 -n
+xfconf-query -c xfce4-panel -p /plugins/plugin-4/miniature-view -t "bool" -s "false" -n
 ```
 
 ## Power Manager
