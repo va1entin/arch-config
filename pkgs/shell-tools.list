@@ -22,6 +22,7 @@ pdftk
 pandoc
 pwgen
 rclone
+reflector
 rsync
 sshfs
 steghide
