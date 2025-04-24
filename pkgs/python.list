@@ -1,5 +1,6 @@
 python
 python-gnupg
+python-matplotlib
 python-mutagen
 python-openai
 python-pip
