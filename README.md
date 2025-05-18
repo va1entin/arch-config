@@ -105,6 +105,14 @@ xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Shift>l"
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -t "string" -s "xflock4" -n
 ```
 
+Disable automatic lock screen and screensaver
+
+```bash
+xfconf-query -c xfce4-power-manager -p "/xfce4-power-manager/lock-screen-suspend-hibernate" -t "bool" -s "false" -n
+xfconf-query -c xfce4-power-manager -p "/xfce4-power-manager/dpms-enabled" -t "bool" -s "false" -n
+xfconf-query -c xfce4-screensaver -p "/saver/idle-activation/enabled" -t "bool" -s "false" -n
+```
+
 ## Mouse cursor theme
 
 Mouse and Touchpad -> Theme
