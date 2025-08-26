@@ -58,6 +58,17 @@ xfconf-query -c xfce4-appfinder -p /close-on-focus-lost -t "bool" -s "true" -n
 xfconf-query -c xfce4-appfinder -p /hide-window-decorations -t "bool" -s "true" -n
 ```
 
+## Desktop
+
+Disable default desktop icons
+
+```bash
+xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-home -t "bool" -s "false" -n
+xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-filesystem -t "bool" -s "false" -n
+xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-trash -t "bool" -s "false" -n
+xfconf-query -c xfce4-desktop -p /desktop-icons/file-icons/show-removable -t "bool" -s "false" -n
+```
+
 ## HiDPI
 
 <https://wiki.archlinux.org/title/HiDPI#Xfce>
