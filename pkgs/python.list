@@ -1,4 +1,5 @@
 python
+python-uv
 python-gnupg
 python-matplotlib
 python-mutagen
