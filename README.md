@@ -25,15 +25,15 @@ cd arch-config
 # LightDM
 
 ```bash
-sudo cp ~/Sync/Wallpaper/1596997155092.jpg /usr/share/endeavouros/backgrounds/
-sudo chown root:root /usr/share/endeavouros/backgrounds/1596997155092.jpg
+sudo cp ~/Sync/Wallpaper/1596997155092.jpg /usr/share/backgrounds/xfce/
+sudo chown root:root /usr/share/backgrounds/xfce/1596997155092.jpg
 sudo cp configs/slick-greeter.conf /etc/lightdm/
-sudo chown root:root /etc/lightmd/slick-greeter.conf
+sudo chown root:root /etc/lightdm/slick-greeter.conf
 ```
 
 ## HiDPI
 
-Add to `/etc/lightmd/slick-greeter.conf`
+Add to `/etc/lightdm/slick-greeter.conf`
 
 ```
 [Greeter]
