@@ -3,6 +3,7 @@ cpulimit
 curl
 ddccontrol
 file
+glxinfo
 htop
 jpegoptim
 jq
