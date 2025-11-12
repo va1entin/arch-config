@@ -22,7 +22,6 @@ pdftk
 pandoc
 pwgen
 rclone
-reflector
 rsync
 sshfs
 steghide
@@ -35,6 +34,5 @@ vim
 wget
 which
 yamllint
-yaycache
 yt-dlp
 zip
