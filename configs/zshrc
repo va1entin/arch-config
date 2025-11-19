@@ -1,5 +1,6 @@
 setopt HIST_IGNORE_SPACE
 
+# Aliases
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
 alias ydl="~/git/tools/ydl/ydl.py"
 alias rgrep="grep -r"
