@@ -2,7 +2,11 @@
 
 # connect_bluetooth_audio_device.sh <mac address> <device name as seen in wpctl status>
 
-bluetoothctl connect "$1"
+connected=1
+while [ $connected -ne 0 ]; do
+    bluetoothctl connect "$1"
+    connected=$?
+done
 
 id=""
 while [ -z "$id" ]; do
