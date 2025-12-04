@@ -244,6 +244,11 @@ Add shortcut for `Super+F11` with command: `ddccontrol -r 0x10 -W -5 dev:/dev/i2
 
 Add shortcut for `Super+F12` with command: `ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3`
 
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F11" -t "string" -s "ddccontrol -r 0x10 -W -5 dev:/dev/i2c-3" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F12" -t "string" -s "ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3" -n
+```
+
 ## Session & Startup
 
 **General tab**
@@ -284,6 +289,11 @@ Keyboard -> Application Shortcuts
 Add shortcut for `Super+F9 with command: `amixer set Master 5%-`
 
 Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
+
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F9" -t "string" -s "amixer set Master 5%-" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F10" -t "string" -s "amixer set Master 5%+" -n
+```
 
 ## Window manager
 
