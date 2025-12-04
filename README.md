@@ -44,7 +44,7 @@ See [Arch wiki](https://wiki.archlinux.org/title/LightDM)
 
 # XFCE 4.20
 
-Open Settings Manager and apply the following settings in respective categories
+Open Settings Manager and apply the following settings in respective categories or run `xfconf-query` commands where applicable.
 
 ## Application finder
 
