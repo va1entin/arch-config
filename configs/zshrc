@@ -8,10 +8,17 @@ alias adpdf="asciidoctor -r asciidoctor-pdf -b pdf -a pdf-style='theme.yml'"
 alias mountdata="if ! grep -qs '/mnt/data-drive' /proc/mounts; then sudo cryptsetup luksOpen /dev/disk/by-uuid/6ed8cf7b-1fb2-4dad-9648-14adb275e8f7 data-drive && sudo mount /dev/mapper/data-drive /mnt/data-drive;fi"
 alias "??"="gh copilot suggest"
 
-# fix for sometimes extremely loud volume on desktop startup
-if [ ! -f /tmp/amixer_volume_fix_run ]; then
+if [ ! -f /tmp/startup_fixes_run ]; then
+    # set screen as audio output
+    speaker_id=$(wpctl status | grep -Eo '[0-9]*\. TU116 .*vol' | sed 's/\..*//g')
+    if [ -n "$speaker_id" ]; then
+        wpctl set-default $speaker_id
+    fi
+
+    # fix for sometimes extremely loud volume on desktop startup
     amixer set Master 1%- > /dev/null
-    touch /tmp/amixer_volume_fix_run
+
+    touch /tmp/startup_fixes_run
 fi
 
 PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/git/arch-config/scripts"
