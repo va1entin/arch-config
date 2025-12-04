@@ -240,9 +240,9 @@ Keyboard -> Application Shortcuts
 
 Get monitor device path: `ddccontrol -p | grep -Eo 'dev:/dev/[a-z0-9-]*$' | sort -u`
 
-Add shortcut for `Super+F11` with command: `ddccontrol -r 0x10 -W -5 -d dev:/dev/i2c-3`
+Add shortcut for `Super+F11` with command: `ddccontrol -r 0x10 -W -5 dev:/dev/i2c-3`
 
-Add shortcut for `Super+F12` with command: `ddccontrol -r 0x10 -W +5 -d dev:/dev/i2c-3`
+Add shortcut for `Super+F12` with command: `ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3`
 
 ## Session & Startup
 
