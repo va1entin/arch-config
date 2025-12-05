@@ -2,6 +2,7 @@ podman
 podman-compose
 git
 github-cli
+github-copilot-cli
 go
 hugo
 rpi-imager
