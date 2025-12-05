@@ -9,6 +9,9 @@ alias mountdata="if ! grep -qs '/mnt/data-drive' /proc/mounts; then sudo cryptse
 alias "??"="copilot --allow-all-tools -p"
 
 if [ ! -f /tmp/startup_fixes_run ]; then
+    # disable do not disturb
+    xfconf-query -c xfce4-notifyd -p /do-not-disturb -t "bool" -s "false"
+
     # set screen as audio output
     speaker_id=$(wpctl status | grep -Eo '[0-9]*\. TU116 .*vol' | sed 's/\..*//g')
     if [ -n "$speaker_id" ]; then
