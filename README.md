@@ -249,6 +249,16 @@ xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F11" -t "st
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F12" -t "string" -s "ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3" -n
 ```
 
+## Room brightness shortcut
+
+```bash
+HOMEASSISTANT_URL=your_home_assistant_hostname_here
+HOMEASSISTANT_TOKEN=your_long_lived_access_token_here
+
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F7" -t "string" -s "curl -X POST -H \"Authorization: Bearer $HOMEASSISTANT_TOKEN\" -H \"content-type: application/json\" -d '{\"entity_id\":\"light.office\",\"brightness_step_pct\":-5}' \"http://$HOMEASSISTANT_URL/api/services/light/turn_on\"" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F8" -t "string" -s "curl -X POST -H \"Authorization: Bearer $HOMEASSISTANT_TOKEN\" -H \"content-type: application/json\" -d '{\"entity_id\":\"light.office\",\"brightness_step_pct\":5}' \"http://$HOMEASSISTANT_URL/api/services/light/turn_on\"" -n
+```
+
 ## Session & Startup
 
 **General tab**
