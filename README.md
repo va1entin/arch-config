@@ -344,6 +344,7 @@ Cycle through windows on all workspaces -> No
 ```bash
 xfconf-query -c xfwm4 -p "/general/cycle_workspaces" -t "bool" -s "false" -n
 xfconf-query -c xfwm4 -p "/general/scroll_workspaces" -t "bool" -s "false" -n
+xfconf-query -c xfwm4 -p "/general/mousewheel_rollup" -t "bool" -s "false" -n
 ```
 
 ## Workspaces
