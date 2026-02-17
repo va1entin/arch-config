@@ -9,4 +9,5 @@ python-pycodestyle
 python-pylint
 python-pynacl
 python-pytest
+python-scipy
 python-sympy
