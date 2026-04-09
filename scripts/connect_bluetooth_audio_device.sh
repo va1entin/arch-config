@@ -15,10 +15,13 @@ while [ $connected -ne 0 ]; do
     connected=$?
 done
 
-id=""
-while [ -z "$id" ]; do
-    id=$(wpctl status | grep -Eo "[0-9]*\. bluez_output.$1" | sed 's/\..*//g')
-    sleep 1
+while true; do
+    id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and (.info.props["api.bluez5.address"]) == "'$1'") | .id')
+    if [ -n "$id" ]; then
+        break
+    else
+        sleep 1
+    fi
 done
 
 wpctl set-default "$id"
