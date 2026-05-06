@@ -13,8 +13,9 @@ if [ ! -f /tmp/startup_fixes_run ]; then
     xfconf-query -c xfce4-notifyd -p /do-not-disturb -t "bool" -s "false"
 
     # set screen as audio output
-    speaker_id=$(wpctl status | grep -Eo '[0-9]*\. TU116 .*vol' | sed 's/\..*//g')
+    speaker_id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and (.info.props["node.description"]) == "TU116 High Definition Audio Controller Digital Stereo (HDMI)") | .id')
     if [ -n "$speaker_id" ]; then
+        sleep 2
         wpctl set-default $speaker_id
     fi
 
