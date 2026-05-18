@@ -15,7 +15,7 @@ if [ ! -f /tmp/startup_fixes_run ]; then
     # set screen as audio output
     speaker_id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and (.info.props["node.description"]) == "TU116 High Definition Audio Controller Digital Stereo (HDMI)") | .id')
     if [ -n "$speaker_id" ]; then
-        sleep 2
+        sleep 5
         wpctl set-default $speaker_id
     fi
 
