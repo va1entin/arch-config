@@ -16,7 +16,7 @@ while [ $connected -ne 0 ]; do
 done
 
 while true; do
-    id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and (.info.props["api.bluez5.address"]) == "'$1'") | .id')
+    id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and ( (.info.props["api.bluez5.address"]) == "'$1'") or ((.info.props["node.name"]) == "bluez_output.'$1'")) | .id')
     if [ -n "$id" ]; then
         break
     else
