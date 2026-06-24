@@ -15,13 +15,16 @@ while [ $connected -ne 0 ]; do
     connected=$?
 done
 
+echo "Getting pipewire audio sink ID of connected device..."
 while true; do
     id=$(pw-dump -N | jq '.[] | select((.info.props["media.class"]) == "Audio/Sink" and ( (.info.props["api.bluez5.address"]) == "'$1'") or ((.info.props["node.name"]) == "bluez_output.'$1'")) | .id')
     if [ -n "$id" ]; then
+        echo "Audio sink ID found."
         break
     else
         sleep 1
     fi
 done
 
+echo "Setting connected device as default pipewire sink..."
 wpctl set-default "$id"
