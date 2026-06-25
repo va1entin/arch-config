@@ -294,6 +294,10 @@ Edit -> Preferences
 - Set background colour `#171421`
 - Set Text colour `#d0cfcc`
 
+```bash
+xfconf-query -c xfce4-terminal -p /misc-default-geometry -t "string" -s "148x33" -n
+```
+
 ## Volume control shortcut
 
 Keyboard -> Application Shortcuts
