@@ -228,10 +228,6 @@ Keyboard -> Application Shortcuts
 
 Get monitor device path: `ddccontrol -p | grep -Eo 'dev:/dev/[a-z0-9-]*$' | sort -u`
 
-Add shortcut for `Super+F11` with command: `ddccontrol -r 0x10 -W -5 dev:/dev/i2c-3`
-
-Add shortcut for `Super+F12` with command: `ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3`
-
 ```bash
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F11" -t "string" -s "ddccontrol -r 0x10 -W -5 dev:/dev/i2c-3" -n
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F12" -t "string" -s "ddccontrol -r 0x10 -W +5 dev:/dev/i2c-3" -n
@@ -272,17 +268,10 @@ xfconf-query -c xfce4-session -p /shutdown/LockScreen -t "bool" -s "true" -n
 
 Edit -> Preferences
 
-**Appearance tab**
-
-- Set font to `Monospace Regular` at size `12`
-
-**Colours tab**
-
-- Select Preset "Tango"
-- Set background colour `#171421`
-- Set Text colour `#d0cfcc`
-
 ```bash
+xfconf-query -c xfce4-terminal -p /color-background -t "string" -s "#171714142121" -n
+xfconf-query -c xfce4-terminal -p /color-foreground -t "string" -s "#d0d0cfcfcccc" -n
+
 # desktop
 xfconf-query -c xfce4-terminal -p /misc-default-geometry -t "string" -s "134x33" -n
 
@@ -295,10 +284,6 @@ xfconf-query -c xfce4-terminal -p /misc-default-geometry -t "string" -s "103x30"
 
 Keyboard -> Application Shortcuts
 
-Add shortcut for `Super+F9 with command: `amixer set Master 5%-`
-
-Add shortcut for `Super+F10 with command: `amixer set Master 5%+`
-
 ```bash
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F9" -t "string" -s "amixer set Master 5%-" -n
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F10" -t "string" -s "amixer set Master 5%+" -n
@@ -307,13 +292,6 @@ xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F10" -t "st
 ## Window manager
 
 **Keyboard tab**
-
-```
-Maximize window -> Ctrl+Alt+Up (because of Alt+Up shortcut in VSC)
-Hide window -> Ctrl+Alt+Down (because of Alt+Down shortcut in VSC)
-Tile window to the left -> Alt+Left
-Tile window to the right -> Alt+Right
-```
 
 ```bash
 xfconf-query -c xfce4-keyboard-shortcuts -p "/xfwm4/custom/<Shift><Alt>Up" -t string -s "maximize_window_key" -n
