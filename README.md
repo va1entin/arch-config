@@ -147,23 +147,11 @@ View -> Colour Scheme -> Select `Oblivion`
 
 Settings Editor -> night-mode (channel only appeared at some point after genmon and redshift were set up, not sure why)
 
-**Dark**
-
-GtkTheme: Arc-Dark
-
-IconTheme: Arc-X-P
-
-**Light**
-
-GtkTheme: Arc
-
-IconTheme: Arc-X-D
-
 ```bash
-xfconf-query -c night-mode -p /Dark/GtkTheme -t "string" -s "Arc-Dark" -n
-xfconf-query -c night-mode -p /Dark/IconTheme -t "string" -s "Arc-X-P" -n
-xfconf-query -c night-mode -p /Light/GtkTheme -t "string" -s "Arc" -n
-xfconf-query -c night-mode -p /Light/IconTheme -t "string" -s "Arc-X-D" -n
+xfconf-query -c night-mode -p /Dark/GtkTheme -t "string" -s "Adwaita-dark" -n
+xfconf-query -c night-mode -p /Dark/IconTheme -t "string" -s "elementary" -n
+xfconf-query -c night-mode -p /Light/GtkTheme -t "string" -s "Adwaita" -n
+xfconf-query -c night-mode -p /Light/IconTheme -t "string" -s "elementary" -n
 ```
 
 ### Automatic switch
