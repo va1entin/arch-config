@@ -22,7 +22,7 @@ if [ ! -f /tmp/startup_fixes_run ]; then
     amixer set Master 1%- > /dev/null
 
     # clear yay and paccache
-    yaycache -r -k0 > /dev/null && paccache -r -k 0 > /dev/null
+    yaycache -r -q --remove-build-files -k0 && paccache -q -r -k 0
 
     touch /tmp/startup_fixes_run
 fi
