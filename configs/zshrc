@@ -21,6 +21,9 @@ if [ ! -f /tmp/startup_fixes_run ]; then
     # fix for sometimes extremely loud volume on desktop startup
     amixer set Master 1%- > /dev/null
 
+    # clear yay and paccache
+    yaycache -r -k0 > /dev/null && paccache -r -k 0 > /dev/null
+
     touch /tmp/startup_fixes_run
 fi
 
