@@ -5,7 +5,6 @@ ln -s ~/git/arch-config/configs/vimrc ~/.vimrc
 sudo ln -s ~/git/arch-config/configs/vimrc /root/.vimrc
 echo ""
 
-echo "Setting zsh as default shell for byobu..."
-echo "set -g default-shell /usr/bin/zsh" > ~/.byobu/.tmux.conf
-echo "set -g default-command /usr/bin/zsh" >> ~/.byobu/.tmux.conf
+echo "Creating symlink for tmux.conf..."
+ln -s ~/git/arch-config/configs/tmux.conf ~/.tmux.conf
 echo ""
