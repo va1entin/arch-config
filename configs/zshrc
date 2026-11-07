@@ -34,8 +34,16 @@ bindkey '^H' backward-kill-word
 bindkey '^[[3;5~' backward-kill-word
 
 
-# Don't save commands that start with a space to history
+# History
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=200000
+SAVEHIST=100000
+
+## Don't save commands that start with a space to history
 setopt HIST_IGNORE_SPACE
+
+## Share history between all sessions
+setopt SHARE_HISTORY
 
 
 # Aliases
