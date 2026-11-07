@@ -17,6 +17,23 @@ zstyle ':vcs_info:git:*' formats ' %F{cyan}git:(%F{39}%b%F{cyan})%f'
 PROMPT='%F{cyan}%n%f@%F{yellow}%m%f:%F{green}%~%f${vcs_info_msg_0_} $ '
 
 
+# Key Bindings
+## Enable standard keyboard mapping definitions
+bindkey -e
+
+## Map Ctrl+Left Arrow to move back one word
+bindkey '^[[1;5D' backward-word
+
+## Map Ctrl+Right Arrow to move forward one word
+bindkey '^[[1;5C' forward-word
+
+## Map Ctrl+Backspace (Linux/X11 default sequence) to delete a word backward
+bindkey '^H' backward-kill-word
+
+## Map Ctrl+Backspace (macOS/Ghostty alternative sequence) to delete a word backward
+bindkey '^[[3;5~' backward-kill-word
+
+
 # Don't save commands that start with a space to history
 setopt HIST_IGNORE_SPACE
 
