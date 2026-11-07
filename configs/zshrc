@@ -1,4 +1,25 @@
+# Prompt
+## Evaluate variables inside the prompt dynamically
+setopt prompt_subst
+
+## Enable native vcs_info support
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+## Enable git backend and check for changes on every command
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git*:*' get-revision true
+
+## Configure git part of the prompt to match maran theme
+zstyle ':vcs_info:git:*' formats ' %F{cyan}git:(%F{39}%b%F{cyan})%f'
+
+## Match maran theme
+PROMPT='%F{cyan}%n%f@%F{yellow}%m%f:%F{green}%~%f${vcs_info_msg_0_} $ '
+
+
+# Don't save commands that start with a space to history
 setopt HIST_IGNORE_SPACE
+
 
 # Aliases
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
@@ -27,4 +48,10 @@ if [ ! -f /tmp/startup_fixes_run ]; then
     touch /tmp/startup_fixes_run
 fi
 
+
 PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/git/arch-config/scripts"
+
+
+if [ -z "$TMUX" ]; then
+    tmux attach-session -t 0 || tmux new-session -s 0
+fi
