@@ -14,5 +14,6 @@ sudo ln -s ~/git/arch-config/configs/vimrc /root/.vimrc
 echo ""
 
 echo "Creating symlink for config.ghostty..."
+mkdir -p ~/.config/ghostty/
 ln -s ~/git/arch-config/configs/config.ghostty ~/.config/ghostty/config.ghostty
 echo ""
