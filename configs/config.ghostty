@@ -1,8 +1,5 @@
 window-decoration = server
-# window-position-x = 20
-# window-position-y = 20
 
-cursor-color = #e6e6e6
 font-family = Monospace Regular
 font-size = 10
 
@@ -24,3 +21,4 @@ palette = 14=#34e2e2
 palette = 15=#eeeeec
 background = #0d0e1c
 foreground = #d0d0cf
+cursor-color = #e6e6e6
