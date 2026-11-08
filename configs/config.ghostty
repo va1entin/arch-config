@@ -1,10 +1,14 @@
+# Ghostty window
 window-decoration = server
+title = Terminal
 
+# Font
 #font-family = Monospace Regular
 font-family = JetBrains Mono
 font-style = Medium
 font-size = 10
 
+# Colours
 palette = 0=#000000
 palette = 1=#cc0000
 palette = 2=#4e9a06
@@ -28,4 +32,5 @@ cursor-color = #e6e6e6
 # might help with statusbar padding issue, currently only supported on macos
 # window-step-resize = true
 
+# Notifications
 app-notifications = no-clipboard-copy
