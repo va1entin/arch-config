@@ -22,3 +22,8 @@ palette = 15=#eeeeec
 background = #0d0e1c
 foreground = #d0d0cf
 cursor-color = #e6e6e6
+
+# might help with statusbar padding issue, currently only supported on macos
+# window-step-resize = true
+
+app-notifications = no-clipboard-copy
