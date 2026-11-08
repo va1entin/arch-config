@@ -1,10 +1,11 @@
-window-decoration = auto
+window-decoration = server
 # window-position-x = 20
 # window-position-y = 20
 #theme = Modus Vivendi
 #theme = Modus Vivendi Tinted
 cursor-color = #e6e6e6
 font-family = Monospace Regular
+font-size = 10
 
 palette = 0=#000000
 palette = 1=#cc0000
