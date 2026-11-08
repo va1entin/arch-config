@@ -12,3 +12,7 @@ echo "Creating symlink for vimrc..."
 ln -s ~/git/arch-config/configs/vimrc ~/.vimrc
 sudo ln -s ~/git/arch-config/configs/vimrc /root/.vimrc
 echo ""
+
+echo "Creating symlink for config.ghostty..."
+ln -s ~/git/arch-config/configs/config.ghostty ~/.config/ghostty/config.ghostty
+echo ""
