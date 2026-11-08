@@ -46,6 +46,8 @@ setopt HIST_IGNORE_SPACE
 setopt SHARE_HISTORY
 
 
+PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/git/arch-config/scripts"
+
 # Aliases
 alias abcde="abcde -c ~/git/arch-config/configs/abcde.conf"
 alias ydl="~/git/tools/ydl/ydl.py"
@@ -72,10 +74,6 @@ if [ ! -f /tmp/startup_fixes_run ]; then
 
     touch /tmp/startup_fixes_run
 fi
-
-
-PATH="$PATH:$HOME/bin:$HOME/.local/bin:$HOME/git/arch-config/scripts"
-
 
 if [ -z "$TMUX" ]; then
     tmux attach-session -t 0 || tmux new-session -s 0
