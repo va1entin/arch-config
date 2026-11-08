@@ -1,6 +1,8 @@
 window-decoration = server
 
-font-family = Monospace Regular
+#font-family = Monospace Regular
+font-family = JetBrains Mono
+font-style = Medium
 font-size = 10
 
 palette = 0=#000000
