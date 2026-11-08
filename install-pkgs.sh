@@ -4,6 +4,10 @@ echo "Ranking EOS packages mirrors..."
 sudo eos-rankmirrors
 echo ""
 
+echo "Installing yay..."
+sudo pacman -S yay
+echo ""
+
 echo "Iterating package lists..."
 find pkgs/ -type f -name "*.list" -exec bash -c '
     read -n1 -p "Install packages from {} [y/n] " yn
