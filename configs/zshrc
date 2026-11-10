@@ -33,6 +33,14 @@ bindkey '^H' backward-kill-word
 ## Map Ctrl+Backspace (macOS/Ghostty alternative sequence) to delete a word backward
 bindkey '^[[3;5~' backward-kill-word
 
+## Map home/pos1 key to move to the beginning of the line
+bindkey '^[[1~' beginning-of-line
+
+## Map end key to move to the end of the line
+bindkey '^[[4~' end-of-line
+
+## Map delete key to delete the character under the cursor
+bindkey '^[[3~' delete-char
 
 # History
 HISTFILE="$HOME/.zsh_history"
