@@ -18,6 +18,8 @@ PROMPT='%F{cyan}%n%f@%F{yellow}%m%f:%F{green}%~%f${vcs_info_msg_0_} $ '
 
 
 # Key Bindings
+## Run cat -v and press keys to see escape sequence
+
 ## Enable standard keyboard mapping definitions
 bindkey -e
 
