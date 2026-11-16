@@ -276,13 +276,22 @@ xfconf-query -c xfce4-terminal -p /misc-default-geometry -t "string" -s "103x30"
 
 ```
 
-## Volume control shortcut
+## Volume control shortcut (overwritten with water intake shortcut)
 
 Keyboard -> Application Shortcuts
 
 ```bash
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F9" -t "string" -s "amixer set Master 5%-" -n
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F10" -t "string" -s "amixer set Master 5%+" -n
+```
+
+## Water intake shortcut
+
+Keyboard -> Application Shortcuts
+
+```bash
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F9" -t "string" -s "curl -X POST -H \"Authorization: Bearer $HOMEASSISTANT_TOKEN\" -H \"content-type: application/json\" -d '{\"amount\":200}' \"http://$HOMEASSISTANT_URL/api/services/script/add_water_intake\"" -n
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Super>F10" -t "string" -s "curl -X POST -H \"Authorization: Bearer $HOMEASSISTANT_TOKEN\" -H \"content-type: application/json\" -d '{\"amount\":500}' \"http://$HOMEASSISTANT_URL/api/services/script/add_water_intake\"" -n
 ```
 
 ## Window manager
