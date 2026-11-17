@@ -17,3 +17,8 @@ echo "Creating symlink for config.ghostty..."
 mkdir -p ~/.config/ghostty/
 ln -s ~/git/arch-config/configs/config.ghostty ~/.config/ghostty/config.ghostty
 echo ""
+
+echo "Creating symlink for Zettlr custom.css..."
+mkdir -p ~/.config/Zettlr/
+ln -s ~/git/arch-config/configs/zettlr_custom.css ~/.config/Zettlr/custom.css
+echo ""

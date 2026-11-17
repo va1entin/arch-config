@@ -1,0 +1,33 @@
+.cm-editor {
+    --zettlr-editor-scroller-bg: #F7F5F1;
+    --zettlr-editor-font: "Noto Serif";
+}
+.dark .cm-editor {
+    --zettlr-editor-scroller-bg: #100E09;
+}
+
+.dark .cm-scroller {
+    --zettlr-editor-scroller-color: #EEEEEC;
+}
+
+body div#toolbar {
+    background-color: #F7F5F1;
+}
+
+body:not(.darwin) div#window-content {
+    background-color: #F7F5F1;
+}
+
+body.win32 .tree-item.directory:not(.collapsed) {
+    background-color: #F7F5F1;
+}
+body.linux .tree-item.directory:not(.collapsed) {
+    background-color: #F7F5F1;
+}
+
+body.win32 input, select, textarea, button {
+    background-color: #F7F5F1;
+}
+body.linux input, select, textarea, button {
+    background-color: #F7F5F1;
+}
